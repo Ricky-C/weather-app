@@ -20,18 +20,56 @@ state = {
 		e.preventDefault();
 		const city = e.target.elements.city.value;
 		const country = e.target.elements.country.value;
-		const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}id=524901&APPID=${API_KEY}`);
+		const api_call = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${city},${country}id=524901&APPID=${API_KEY}&units=imperial`);
 		const data = await api_call.json()
 		if (city && country) {
 			console.log(data);
+			
+			
 			this.setState({
-				temperature: data.main.temp,
-				city: data.name,
-				country: data.sys.country,
-				humidity: data.main.humidity,
-				description: data.weather[0].description,
-				error: ""
+					
+						temperaturemax1: data.list[0].main.temp_max,
+						temperaturemin1: data.list[0].main.temp_min,
+						city1: data.city.name,
+						country1: data.city.country,
+						humidity1: data.list[0].main.humidity,
+						description1: data.list[0].weather[0].description,
+						error1: "",
+
+						temperaturemax2: data.list[0].main.temp_max,
+						temperaturemin2: data.list[0].main.temp_min,
+						city2: data.city.name,
+						country2: data.city.country,
+						humidity2: data.list[8].main.humidity,
+						description2: data.list[8].weather[0].description,
+						error2: "",
+					
+						temperaturemax3: data.list[0].main.temp_max,
+						temperaturemin3: data.list[0].main.temp_min,
+						city3: data.city.name,
+						country3: data.city.country,
+						humidity3: data.list[16].main.humidity,
+						description3: data.list[16].weather[0].description,
+						error3: "",
+								
+						temperaturemax4: data.list[0].main.temp_max,
+						temperaturemin4: data.list[0].main.temp_min,
+						city4: data.city.name,
+						country4: data.city.country,
+						humidity4: data.list[24].main.humidity,
+						description4: data.list[24].weather[0].description,
+						error4: "",
+					
+						temperaturemax5: data.list[0].main.temp_max,
+						temperaturemin5: data.list[0].main.temp_min,
+						city5: data.city.name,
+						country5: data.city.country,
+						humidity5: data.list[32].main.humidity,
+						description5: data.list[32].weather[0].description,
+						error5: ""
+					
 			});
+		
 		} else {
 			this.setState({
 			temperature: undefined,
@@ -50,12 +88,45 @@ state = {
 				<Titles />
 				<Form getWeather={this.getWeather}/>
 				<Weather 
-				temperature={this.state.temperature}
-				city={this.state.city}
-				country={this.state.country}
-				humidity={this.state.humidity}
-				description={this.state.description}
-				error={this.state.error}
+				temperaturemax1={this.state.temperaturemax1}
+				temperaturemin1={this.state.temperaturemin1}
+				city1={this.state.city1}
+				country1={this.state.country1}
+				humidity1={this.state.humidity1}
+				description1={this.state.description1}
+				error1={this.state.error1}
+
+				temperaturemax2={this.state.temperaturemax2}
+				temperaturemin2={this.state.temperaturemin2}
+				city2={this.state.city2}
+				country2={this.state.country2}
+				humidity2={this.state.humidity2}
+				description2={this.state.description2}
+				error2={this.state.error2}
+
+				temperaturemax3={this.state.temperaturemax3}
+				temperaturemin3={this.state.temperaturemin3}
+				city3={this.state.city3}
+				country3={this.state.country3}
+				humidity3={this.state.humidity3}
+				description3={this.state.description3}
+				error3={this.state.error3}
+
+				temperaturemax4={this.state.temperaturemax4}
+				temperaturemin4={this.state.temperaturemin4}
+				city4={this.state.city4}
+				country4={this.state.country4}
+				humidity4={this.state.humidity4}
+				description4={this.state.description4}
+				error4={this.state.error4}
+
+				temperaturemax5={this.state.temperaturemax5}
+				temperaturemin5={this.state.temperaturemin5}
+				city5={this.state.city5}
+				country5={this.state.country5}
+				humidity5={this.state.humidity5}
+				description5={this.state.description5}
+				error5={this.state.error5}
 				/>
 			</div>
 		);
