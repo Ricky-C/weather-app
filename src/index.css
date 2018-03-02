@@ -1,5 +1,34 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+
+h1, p {
+	text-align: center;
 }
+
+form {
+	text-align: center;
+}
+h2 {
+	display: block;
+
+}
+ol {
+	list-style: none;
+}
+
+img {
+	display: block;
+	margin:0 auto;
+
+}
+.day {
+	width: 19.666667%!important;
+	border: 1px solid blue;
+	padding-left: 3px!important;
+	padding-right: 3px!important;
+	justify-content: center;
+	align-items: center;
+}
+
+body {
+	background-image: url();
+}
+
