@@ -34,8 +34,7 @@ const Weather = props => (
 					<div>
 						{props.date1 && <p>{props.date1.split(' ')[0].replace(/-/, " ")}</p>}
 						{props.icon1 && <img src={"http://openweathermap.org/img/w/"+ props.icon1 + ".png"} className="icon"/>}
-						{props.temperaturemax1 && <p>High: {Math.floor(props.temperaturemax1)}</p>}
-						{props.temperaturemin1 && <p>Low: {Math.floor(props.temperaturemin1)}</p>}
+						{props.temperaturemax1 && <p>Temp: {Math.round(props.temperaturemax1)}</p>}
 						{props.humidity1 && <p>Humidity: {props.humidity1}</p>}
 						{props.description1 && <p>{props.description1}</p>}
 						{props.error1 && <p>{props.error1}</p>}
@@ -45,8 +44,7 @@ const Weather = props => (
 					<div>
 						{props.date2 && <p>{props.date2.split(' ')[0].replace(/-/, " ")}</p>}
 						{props.icon2 && <img src={"http://openweathermap.org/img/w/"+ props.icon2 + ".png"}/>}
-						{props.temperaturemax2 && <p>High: {Math.floor(props.temperaturemax2)}</p>}
-						{props.temperaturemin2 && <p>Low: {Math.floor(props.temperaturemin2)}</p>}
+						{props.temperaturemax2 && <p>Temp: {Math.round(props.temperaturemax2)}</p>}
 						{props.humidity2 && <p>Humidity: {props.humidity2}</p>}
 						{props.description2 && <p>{props.description2}</p>}
 						{props.error2 && <p>{props.error2}</p>}
@@ -56,8 +54,7 @@ const Weather = props => (
 					<div>
 						{props.date3 && <p>{props.date3.split(' ')[0].replace(/-/, " ")}</p>}
 						{props.icon3 && <img src={"http://openweathermap.org/img/w/"+ props.icon3 + ".png"}/>}
-						{props.temperaturemax3 && <p>High: {Math.floor(props.temperaturemax3)}</p>}
-						{props.temperaturemin3 && <p>Low: {Math.floor(props.temperaturemin3)}</p>}
+						{props.temperaturemax3 && <p>Temp: {Math.round(props.temperaturemax3)}</p>}
 						{props.humidity3 && <p>Humidity: {props.humidity3}</p>}
 						{props.description3 && <p>{props.description3}</p>}
 						{props.error3 && <p>{props.error3}</p>}
@@ -67,8 +64,7 @@ const Weather = props => (
 					<div>
 						{props.date4 && <p>{props.date4.split(' ')[0].replace(/-/, " ")}</p>}
 						{props.icon4 && <img src={"http://openweathermap.org/img/w/"+ props.icon4 + ".png"}/>}
-						{props.temperaturemax4 && <p>High: {Math.floor(props.temperaturemax4)}</p>}
-						{props.temperaturemin4 && <p>Low: {Math.floor(props.temperaturemin4)}</p>}
+						{props.temperaturemax4 && <p>Temp: {Math.round(props.temperaturemax4)}</p>}
 						{props.humidity4 && <p>Humidity: {props.humidity4}</p>}
 						{props.description4 && <p>{props.description4}</p>}
 						{props.error4 && <p>{props.error4}</p>}
@@ -79,8 +75,7 @@ const Weather = props => (
 					<div>
 						{props.date5 && <p>{props.date5.split(' ')[0].replace(/-/, " ")}</p>}
 						{props.icon5 && <img src={"http://openweathermap.org/img/w/"+ props.icon5 + ".png"}/>}
-						{props.temperaturemax5 && <p>High: {Math.floor(props.temperaturemax5)}</p>}
-						{props.temperaturemin5 && <p>Low: {Math.floor(props.temperaturemin5)}</p>}
+						{props.temperaturemax5 && <p>Temp: {Math.round(props.temperaturemax5)}</p>}
 						{props.humidity5 && <p>Humidity: {props.humidity5}</p>}
 						{props.description5 && <p>{props.description5}</p>}
 						{props.error5 && <p>{props.error5}</p>}

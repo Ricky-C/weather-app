@@ -29,7 +29,6 @@ state = {
 			this.setState({
 				icon1: data.list[0].weather[0].icon,
 				temperaturemax1: data.list[0].main.temp_max,
-				temperaturemin1: data.list[0].main.temp_min,
 				date1: data.list[0].dt_txt,
 				city1: data.city.name,
 				country1: data.city.country,
@@ -39,7 +38,6 @@ state = {
 
 				icon2: data.list[8].weather[0].icon,
 				temperaturemax2: data.list[8].main.temp_max,
-				temperaturemin2: data.list[8].main.temp_min,
 				date2: data.list[8].dt_txt,
 				city2: data.city.name,
 				country2: data.city.country,
@@ -49,7 +47,6 @@ state = {
 				
 				icon3: data.list[16].weather[0].icon,
 				temperaturemax3: data.list[16].main.temp_max,
-				temperaturemin3: data.list[16].main.temp_min,
 				date3: data.list[16].dt_txt,
 				city3: data.city.name,
 				country3: data.city.country,
@@ -59,7 +56,6 @@ state = {
 				
 				icon4: data.list[24].weather[0].icon,		
 				temperaturemax4: data.list[24].main.temp_max,
-				temperaturemin4: data.list[24].main.temp_min,
 				date4: data.list[24].dt_txt,
 				city4: data.city.name,
 				country4: data.city.country,
@@ -69,7 +65,6 @@ state = {
 				
 				icon5: data.list[32].weather[0].icon,
 				temperaturemax5: data.list[32].main.temp_max,
-				temperaturemin5: data.list[32].main.temp_min,
 				date5: data.list[32].dt_txt,
 				city5: data.city.name,
 				country5: data.city.country,
@@ -104,7 +99,6 @@ state = {
 							<Weather 
 							icon1={this.state.icon1}
 							temperaturemax1={this.state.temperaturemax1}
-							temperaturemin1={this.state.temperaturemin1}
 							date1={this.state.date1}
 							city1={this.state.city1}
 							country1={this.state.country1}
@@ -114,7 +108,6 @@ state = {
 
 							icon2={this.state.icon2}
 							temperaturemax2={this.state.temperaturemax2}
-							temperaturemin2={this.state.temperaturemin2}
 							date2={this.state.date2}
 							city2={this.state.city2}
 							country2={this.state.country2}
@@ -124,7 +117,6 @@ state = {
 
 							icon3={this.state.icon3}
 							temperaturemax3={this.state.temperaturemax3}
-							temperaturemin3={this.state.temperaturemin3}
 							date3={this.state.date3}
 							city3={this.state.city3}
 							country3={this.state.country3}
@@ -134,7 +126,6 @@ state = {
 
 							icon4={this.state.icon4}
 							temperaturemax4={this.state.temperaturemax4}
-							temperaturemin4={this.state.temperaturemin4}
 							date4={this.state.date4}
 							city4={this.state.city4}
 							country4={this.state.country4}
@@ -144,7 +135,6 @@ state = {
 
 							icon5={this.state.icon5}
 							temperaturemax5={this.state.temperaturemax5}
-							temperaturemin5={this.state.temperaturemin5}
 							date5={this.state.date5}
 							city5={this.state.city5}
 							country5={this.state.country5}
