@@ -1,18 +1,6 @@
 import React from "react";
 import {Grid, Row, Col, Image} from "react-bootstrap";
-const d = new Date();
-const weekday = new Array(7);
-weekday[0]= "Sunday";
-weekday[1]= "Monday";
-weekday[2]= "Tuesday";
-weekday[3]= "Wednesday";
-weekday[4] = "Thursday";
-weekday[5] = "Friday";
-weekday[6] = "Saturday";
 
-
-
-let n = weekday[d.getDay()];
 
 const Weather = props => (
 	<Grid className="fluid">
@@ -32,7 +20,7 @@ const Weather = props => (
 
 			<Col xs={2}  className="day">	
 					<div>
-						{props.date1 && <p>{props.date1.split(' ')[0].replace(/-/, " ")}</p>}
+						{props.date1 && <h3>{props.date1.split(' ')[0].replace(/-/, " ").substr(props.date1.indexOf("")+5)}</h3>}
 						{props.icon1 && <img src={"http://openweathermap.org/img/w/"+ props.icon1 + ".png"} className="icon"/>}
 						{props.temperaturemax1 && <p>Temp: {Math.round(props.temperaturemax1)}</p>}
 						{props.humidity1 && <p>Humidity: {props.humidity1}</p>}
@@ -42,7 +30,7 @@ const Weather = props => (
 			</Col>
 			<Col xs={2}  className="day">
 					<div>
-						{props.date2 && <p>{props.date2.split(' ')[0].replace(/-/, " ")}</p>}
+						{props.date2 && <h3>{props.date2.split(' ')[0].replace(/-/, " ").substr(props.date2.indexOf("")+5)}</h3>}
 						{props.icon2 && <img src={"http://openweathermap.org/img/w/"+ props.icon2 + ".png"}/>}
 						{props.temperaturemax2 && <p>Temp: {Math.round(props.temperaturemax2)}</p>}
 						{props.humidity2 && <p>Humidity: {props.humidity2}</p>}
@@ -52,7 +40,7 @@ const Weather = props => (
 			</Col>
 			<Col xs={2}  className="day">
 					<div>
-						{props.date3 && <p>{props.date3.split(' ')[0].replace(/-/, " ")}</p>}
+						{props.date3 && <h3>{props.date3.split(' ')[0].replace(/-/, " ").substr(props.date3.indexOf("")+5)}</h3>}
 						{props.icon3 && <img src={"http://openweathermap.org/img/w/"+ props.icon3 + ".png"}/>}
 						{props.temperaturemax3 && <p>Temp: {Math.round(props.temperaturemax3)}</p>}
 						{props.humidity3 && <p>Humidity: {props.humidity3}</p>}
@@ -62,7 +50,7 @@ const Weather = props => (
 			</Col>
 			<Col xs={2}  className="day">
 					<div>
-						{props.date4 && <p>{props.date4.split(' ')[0].replace(/-/, " ")}</p>}
+						{props.date4 && <h3>{props.date4.split(' ')[0].replace(/-/, " ").substr(props.date4.indexOf("")+5)}</h3>}
 						{props.icon4 && <img src={"http://openweathermap.org/img/w/"+ props.icon4 + ".png"}/>}
 						{props.temperaturemax4 && <p>Temp: {Math.round(props.temperaturemax4)}</p>}
 						{props.humidity4 && <p>Humidity: {props.humidity4}</p>}
@@ -73,7 +61,7 @@ const Weather = props => (
 			<Col xs={2}  className="day">
 				
 					<div>
-						{props.date5 && <p>{props.date5.split(' ')[0].replace(/-/, " ")}</p>}
+						{props.date5 && <h3>{props.date5.split(' ')[0].replace(/-/, " ").substr(props.date5.indexOf("")+5)}</h3>}
 						{props.icon5 && <img src={"http://openweathermap.org/img/w/"+ props.icon5 + ".png"}/>}
 						{props.temperaturemax5 && <p>Temp: {Math.round(props.temperaturemax5)}</p>}
 						{props.humidity5 && <p>Humidity: {props.humidity5}</p>}

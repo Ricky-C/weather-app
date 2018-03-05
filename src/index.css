@@ -1,4 +1,17 @@
-
+h1 {
+	font-family: 'Playfair Display SC', serif;
+}
+h3 {
+	font-weight: 700px;
+	font-size: 20px;
+	
+	text-align: center;
+}
+p {
+	font-family: 'Dosis', sans-serif;
+	padding-top: 6px;
+	padding-bottom: 4px;
+}
 h1, p {
 	text-align: center;
 }
@@ -17,18 +30,33 @@ ol {
 img {
 	display: block;
 	margin:0 auto;
+	height: 70px;
 
 }
+
 .day {
 	width: 19.666667%!important;
-	border: 1px solid blue;
+	
 	padding-left: 3px!important;
 	padding-right: 3px!important;
 	justify-content: center;
 	align-items: center;
 }
 
-body {
-	background-image: url();
+.header {
+	
+}
+.forms {
+	width: 25%;
+	display: inline-flex;
 }
 
+body {
+	background-image: url('./img/sky2.jpg');
+	background-repeat: no-repeat;
+	font-family:  serif;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
