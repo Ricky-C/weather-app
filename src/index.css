@@ -60,3 +60,19 @@ body {
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px white inset;
 }
+
+@media (min-width: 768px) {
+	img {
+		height: 100px;
+	}
+	p {
+	font-size: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}
+}
+@media (min-width: 1950px) {
+	body {
+		background-size: cover;
+	}
+}
