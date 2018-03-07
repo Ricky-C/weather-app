@@ -2,6 +2,7 @@
   "name": "weather-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/Ricky-C/weather-app",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "npm": "^5.7.1",
