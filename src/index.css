@@ -3,7 +3,7 @@ h1 {
 }
 h3 {
 	font-weight: 700px;
-	font-size: 20px;
+	font-size: 14px;
 	
 	text-align: center;
 }
@@ -61,6 +61,28 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px white inset;
 }
 
+
+
+.days {
+	opacity: 0;
+	animation: fadeIn 1.8s forwards;
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	30% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+
 @media (min-width: 768px) {
 	img {
 		height: 100px;
@@ -69,6 +91,17 @@ input:-webkit-autofill {
 	font-size: 25px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	}
+	h1 {
+		font-size: 44px;
+		font-weight: 600;
+	}
+	h2 {
+		font-size: 38px;
+		font-weight: 500;
+	}
+	h3 {
+		font-size: 30px;
 	}
 }
 @media (min-width: 1950px) {

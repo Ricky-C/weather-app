@@ -13,8 +13,8 @@ const Form = props => (
 			<FormControl
 			className="forms"
 			type="text" 
-			name="country" 
-			placeholder="Country..."
+			name="state" 
+			placeholder="State..."
 			/>
 			<Button type="submit" bsStyle="primary">Get Weather</Button>
 		</FormGroup>

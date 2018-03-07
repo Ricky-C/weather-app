@@ -6,8 +6,8 @@ const Titles = props => (
 			<Col xs={12} className="header">
 				<div>
 					<PageHeader>
-						<h1>Weather Finder</h1>
-						<p className="lead">Find out temperature, conditions, and more...</p>
+						Weather Finder
+						<p className="lead">Get your 5 day forecast</p>
 					</PageHeader>
 				</div>
 			</Col>
