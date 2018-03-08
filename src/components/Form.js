@@ -1,6 +1,5 @@
 import React from "react";
-import Bootstrap from "react-bootstrap";
-import {Button, Grid, Row, Col, FormGroup, FormControl} from 'react-bootstrap';
+import {Button, FormGroup, FormControl} from 'react-bootstrap';
 const Form = props => (
 	<form onSubmit={props.getWeather}>
 		<FormGroup>

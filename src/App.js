@@ -3,7 +3,7 @@ import React from "react";
 import Titles from "./components/Titles";
 import Form from "./components/Form";
 import Weather from "./components/Weather";
-import {Button, Grid, Row, Col, Image} from 'react-bootstrap';
+import {Grid, Row, Col} from 'react-bootstrap';
 const API_KEY = "a6d7861e81e60d37";
 
 class App extends React.Component {

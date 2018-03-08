@@ -50,7 +50,9 @@ img {
 	width: 25%;
 	display: inline-flex;
 }
-
+.cityhead {
+	text-align: center;
+}
 body {
 	background-image: url('./img/sky2.jpg');
 	background-repeat: no-repeat;
